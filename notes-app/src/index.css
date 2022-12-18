@@ -72,3 +72,15 @@ code {
   width: 80vw;
   height: 100px;
 }
+
+.create{
+  padding: 12px 18px;
+  margin: 5px;
+  border: 1px gray;
+  background-color: rgb(33, 159, 255);
+  color: white;
+}
+
+.create:hover{
+  cursor: pointer;
+}

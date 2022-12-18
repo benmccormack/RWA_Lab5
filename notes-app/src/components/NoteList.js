@@ -1,6 +1,7 @@
 import AddNote from './AddNote';
 import Note from './Note';
 
+// notes list gets all notes and maps through them. The div for creating a new note is also rendered from this file
 const NotesList = ({notes, addNoteHandler, handleDeleteNote, handleEditNote}) =>{
     return (
         <div className='container'>
