@@ -11,3 +11,27 @@ const prime = [1,3,9,11,13];
 ```
 
 ### 3. We have looked at three kinds of asynchronous programming mechanisms, namely callbacks, promises and streams. Mention one advantage and one disadvantage of each type.
+
+##### Advantage of callbacks:
+
+Callbacks make it easier to call one function from another and also allow for one function to be completed before the other is executed.
+
+##### Disadvantage of callbacks:
+
+The callback hell problem is a problem that occurs when callbacks are nested among each other, and each callback is dependent on the one before it. This can affect code readability and make code very messy.
+
+##### Advantage of promises:
+
+Promises are easy to read and can improve code readability.
+
+##### Disadvantage of promises:
+
+They are slower than callbacks, this may causer performance issues.
+
+##### Advantage of streams:
+
+Streams can process as they go. Operations can be performed on the data when the stream is still being processed so long as the data being looked for is there.
+
+##### Disadvantage of streams:
+
+Data consistency is a potential disadvantage to using streams in JavaScript.
