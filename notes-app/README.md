@@ -23,7 +23,7 @@ Class MyClass extends React.Component
     constructor(props)
     {
         super(props);
-        this.state = { attribute : "value" };
+        this.state = { name : "value" };
     }
 }
 ```
@@ -31,7 +31,7 @@ Class MyClass extends React.Component
 The state can then be modified with:
 
 ```JavaScript
-this.state.attribute = "new-value";
+this.state.name = "new-value";
 ```
 
 ### 2. In functional programming what does the word functor mean? Can you give an example in JavaScript?
@@ -93,3 +93,8 @@ div {
 ```
 
 ![An image](images/box-result.png)
+
+### 5. Detail how the browser loads and bootstraps a rich web application from an initial URL.
+
+First the user must provide a URL. This is usually a domain name that is linked to a servers IP address. The domain name and the server are linked through a DNS record. The URL is often followed by a path which indicated the resource to be requested.
+The render method is used to render elements to the screen based on a users interaction with the application. React applications only update when they need to be updated. i.e. if the state changes then the element will be rendered again.
