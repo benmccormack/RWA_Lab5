@@ -72,7 +72,8 @@ Data consistency is a potential disadvantage to using streams in JavaScript.
 
 ### 4. With the aid of a diagram and example code, describe the CSS Box Model and show how it can be used to space DOM elements.
 
-The CSS Box Model can be thought of as a box that is wrapped around every HTML element. From the inside out, the box model consists of content, padding, border and margin.
+The CSS Box Model can be thought of as a box that is wrapped around every HTML element. From the inside out, the box model consists of content, padding, border and margin. The diagram below gives a visual representation of the CSS box model.
+![An image](images/box-model.png)
 
 The content is where the content of the element goes.
 The padding creates space around the content, this is transparrent.
@@ -80,3 +81,15 @@ The border goes around the content and padding.
 The margin creates space outside the border. The margin like the padding is also transparent.
 
 Some sample code and the result:
+
+```CSS
+div {
+  background-color: lightgrey;
+  width: 200px;
+  border: 10px solid red;
+  padding: 40px;
+  margin: 30px;
+}
+```
+
+![An image](images/box-result.png)
