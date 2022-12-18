@@ -1,5 +1,39 @@
 ## Questions and Answers
 
+### 1. Explain using code examples, what is meant by props and state in React JS.
+
+Props are used to pass data between components. This is uni-directional and data can only be passed from a parent to a child component. The word props is short for properties. An example of how props can be used is available below.
+
+```JavaScript
+function WelcomeUser(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const element = <WelcomeUser name="Ben" />;
+root.render(element);
+
+```
+
+States are where the property values that belong to a component are stored. When the state of an object is changed, the component is rendered again. An example of states can be seen in the code below.
+
+```JavaScript
+Class MyClass extends React.Component
+{
+    constructor(props)
+    {
+        super(props);
+        this.state = { attribute : "value" };
+    }
+}
+```
+
+The state can then be modified with:
+
+```JavaScript
+this.state.attribute = "new-value";
+```
+
 ### 2. In functional programming what does the word functor mean? Can you give an example in JavaScript?
 
 A functor is a data object that is able to hold elements that are of any data type and can be mapped over by implementing the map operation. A functors map function uses another function as an argument and this function is called on each element within the functor. The end result is a new functor with the same number of elements in it as the original functor.
