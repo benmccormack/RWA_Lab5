@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: cornflowerblue;
+  padding: 2%;
 }
 
 code {
@@ -13,12 +15,12 @@ code {
 }
 
 .note{
-  border: 1px solid black;
   padding: 1rem;
   min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  filter: drop-shadow(0 0 0.30rem black);
 }
 
 .note-footer{
@@ -62,9 +64,11 @@ code {
   text-align: center;
   margin: auto;
   margin: 3%;
+  background-color: white;
+  padding: 2%;
 }
 
 .note-create textarea{
-  width: 900px;
+  width: 80vw;
   height: 100px;
 }

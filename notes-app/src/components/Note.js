@@ -1,6 +1,6 @@
 const Note = ({id, text, color, handleDeleteNote, handleEditNote}) => {
     return(
-        <div className="note">
+        <div className="note" style={{backgroundColor: color}}>
             <span>{text}</span>
             <div className="noteFooter">
                 <button className="edit-button" onClick={() => handleEditNote(id)}>Edit</button>

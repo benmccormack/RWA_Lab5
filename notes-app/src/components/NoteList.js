@@ -6,7 +6,7 @@ const NotesList = ({notes, addNoteHandler, handleDeleteNote, handleEditNote}) =>
         <div className='container'>
             <div className='note-create'><AddNote addNoteHandler={addNoteHandler}/></div>
             <div className='notes-list'>
-                {notes.map((note)=> <Note id={note.id} text={note.text} handleDeleteNote={handleDeleteNote} handleEditNote={handleEditNote}/>)}
+                {notes.map((note)=> <Note id={note.id} text={note.text} color={note.color} handleDeleteNote={handleDeleteNote} handleEditNote={handleEditNote}/>)}
             </div>
         </div>
     )

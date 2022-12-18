@@ -69,3 +69,14 @@ Streams can process as they go. Operations can be performed on the data when the
 ##### Disadvantage of streams:
 
 Data consistency is a potential disadvantage to using streams in JavaScript.
+
+### 4. With the aid of a diagram and example code, describe the CSS Box Model and show how it can be used to space DOM elements.
+
+The CSS Box Model can be thought of as a box that is wrapped around every HTML element. From the inside out, the box model consists of content, padding, border and margin.
+
+The content is where the content of the element goes.
+The padding creates space around the content, this is transparrent.
+The border goes around the content and padding.
+The margin creates space outside the border. The margin like the padding is also transparent.
+
+Some sample code and the result:

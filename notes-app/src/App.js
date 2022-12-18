@@ -6,19 +6,23 @@ const App = () => {
   const [notes, setNotes] = useState([
     {
       id: nanoid(),
-      text: "Example Note 1!",
+      text: "Water the plants",
+      color: "Coral"
     },
     {
       id: nanoid(),
-      text: "Example Note 2!",
+      text: "Feed the dog",
+      color: "cyan"
     },
     {
       id: nanoid(),
-      text: "Example Note 3!",
+      text: "Collect parcels",
+      color: "Chartreuse"
     },
     {
       id: nanoid(),
-      text: "Example Note 4!",
+      text: "Bring in the washing",
+      color: "red"
     }
 
   ]);
@@ -42,9 +46,12 @@ const App = () => {
   const editNote = (id) => {
     const note = notes.filter((note) => note.id === id);
     
-    let updatedText = prompt("Please enter updated note text");
-    //= updatedText;
-  }
+    let noteText = prompt("Please enter updated note text");
+    note[0].text = noteText;
+    console.log(note);
+    const newNotes = [...notes];
+    setNotes(newNotes);
+  } 
 
 
   return (
