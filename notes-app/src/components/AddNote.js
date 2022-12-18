@@ -10,13 +10,12 @@ const AddNote = ({addNoteHandler}) => {
     }
     const handleValueChange = (event) => {
         setNoteText(event.target.value);
-        console.log(event.target.value);
     }
 
     return(<div className="create-note">
         <h1>Note Buddy</h1>
-        <textarea onChange={handleValueChange} value={noteText} placeholder="Type here to add a new note"></textarea>
-        <input type="color" id="noteColor"/>
+        <textarea onChange={handleValueChange} value={noteText} placeholder="Type here to add a new note"></textarea><br/>
+        <input type="color"/><br/>
         <button className="create" onClick={saveNoteClickHandler}>Create Note</button>
     </div> )
 }

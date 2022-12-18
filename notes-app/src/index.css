@@ -56,3 +56,15 @@ code {
 .delete-button:hover{
   cursor: pointer;
 }
+
+.note-create{
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin: 3%;
+}
+
+.note-create textarea{
+  width: 900px;
+  height: 100px;
+}

@@ -23,9 +23,33 @@ const App = () => {
 
   ]);
 
+  const addNote = (text, color) => {
+    const newNote = {
+      id: nanoid(),
+      text: text,
+      color: color,
+    }
+
+    const newNotes = [...notes, newNote];
+    setNotes(newNotes)
+  }
+
+  const deleteNote = (id) => {
+    const newNotes = notes.filter((note) => note.id !== id);
+    setNotes(newNotes);
+  }
+
+  const editNote = (id) => {
+    const note = notes.filter((note) => note.id === id);
+    
+    let updatedText = prompt("Please enter updated note text");
+    //= updatedText;
+  }
+
+
   return (
     <div className="container">
-      <NoteList notes={notes}/>
+      <NoteList notes={notes} addNoteHandler={addNote} handleDeleteNote = {deleteNote} handleEditNote = {editNote}/>
     </div>
   );
 };
